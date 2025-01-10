@@ -1,0 +1,41 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.buttons button {
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.no {
+  color: white;
+  background-color: rgb(150, 22, 22);
+}
+.yes {
+  color: white;
+  background-color: rgb(43, 150, 22);
+}

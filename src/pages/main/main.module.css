@@ -1,0 +1,32 @@
+.container {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  gap: 150px;
+  flex-direction: column;
+}
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  max-width: 500px;
+}
+
+.button {
+  border: 1px solid gray;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+button:not(:disabled):hover {
+  background-color: rgb(15, 43, 65);
+  color: white;
+}
