@@ -12,6 +12,11 @@ export const Header = () => {
   const toggleMenu = () => {
     setOpenMenu((prev) => !prev);
   };
+
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
+
   const isVerify = verifyService.getIsVerify();
 
   return (
@@ -49,7 +54,7 @@ export const Header = () => {
 
       {isOpenMenu ? (
         <nav className={styles.mobileMenu}>
-          <NavLink to={"/"} className={chekIsActive}>
+          <NavLink to={"/"} className={chekIsActive} onClick={closeMenu}>
             Main
           </NavLink>
           {isVerify ? (
@@ -59,16 +64,16 @@ export const Header = () => {
           ) : (
             <a className={styles.disabled}>Game</a>
           )}
-          <NavLink to={"/privacy"} className={chekIsActive}>
+          <NavLink to={"/privacy"} className={chekIsActive} onClick={closeMenu}>
             Privacy policy
           </NavLink>
-          <NavLink to={"/terms"} className={chekIsActive}>
+          <NavLink to={"/terms"} className={chekIsActive} onClick={closeMenu}>
             Terms and conditions
           </NavLink>
-          <NavLink to={"/cookie"} className={chekIsActive}>
+          <NavLink to={"/cookie"} className={chekIsActive} onClick={closeMenu}>
             Cookie Privacy
           </NavLink>
-          <NavLink to={"/blog"} className={chekIsActive}>
+          <NavLink to={"/blog"} className={chekIsActive} onClick={closeMenu}>
             Blog
           </NavLink>
         </nav>
