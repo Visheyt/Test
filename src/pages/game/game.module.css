@@ -4,6 +4,7 @@
   height: 750px;
   display: flex;
   align-items: center;
+  margin-top: 50px;
 }
 .container {
   flex: 1 1 auto;
