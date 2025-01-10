@@ -58,7 +58,11 @@ export const Header = () => {
             Main
           </NavLink>
           {isVerify ? (
-            <NavLink to={"/game"} className={`${chekIsActive}`}>
+            <NavLink
+              to={"/game"}
+              className={`${chekIsActive}`}
+              onClick={closeMenu}
+            >
               Game
             </NavLink>
           ) : (
